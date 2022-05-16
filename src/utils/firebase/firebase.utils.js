@@ -97,3 +97,13 @@ export const signOutUser = async () => await signOut(auth);
 // observer listener for auth changes sign in sign out
 export const onAuthStateChangedListener = (callback) =>
   onAuthStateChanged(auth, callback);
+
+/* 
+
+  {
+    next: callback,
+    error: errorCallback
+    complete: completeCallback
+  }
+
+*/
