@@ -1,5 +1,5 @@
 import React from "react";
-import CategoryItem from "../category-item/category-item.component";
+import DirectoryItem from "../directory-item/directory-item.component";
 
 import "./directory.styless.scss";
 
@@ -8,7 +8,7 @@ const Directory = ({ categories }) => {
     <div className="directory-container">
       {categories.map((category) => {
         //console.log(category);
-        return <CategoryItem key={category.id} category={category} />;
+        return <DirectoryItem key={category.id} category={category} />;
       })}
     </div>
   );
